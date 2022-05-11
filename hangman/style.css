@@ -1,0 +1,218 @@
+@font-face{
+    font-family: neat_chalk;
+    src: url(fonts/neat_chalk.ttf);
+    
+}
+@font-face{
+    font-family: very_simple;
+    src: url(fonts/very_simple.ttf);
+    
+}
+@font-face{
+    font-family: dust;
+    src: url(fonts/dust.ttf);
+}
+@font-face{
+    font-family: board;
+    src: url(fonts/board.ttf);
+}
+@font-face{
+    font-family: midnight;
+    src: url(fonts/midnight.otf);
+}
+body{
+    background-image: url('Morton.jpg');
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    font-family: neat_chalk;
+    margin-top: 40px;
+    font-weight: 550;
+    color: #ece5a0;
+}
+li{
+    font-family: very_simple;
+    font-size: 25px;
+    color: #cfaa75;
+}
+#player_submit{
+    text-align: center;
+    font-family: very_simple;
+    margin-top: -25px;
+    font-size: 25px;
+    color: paleturquoise;
+}
+
+input[type="text"], textarea {
+    background-color : #d1d1d1; 
+}
+#controls{
+ margin-top: 30px;
+}
+#guesses{
+    font-size: 35px;
+    font-family: very_simple;
+    color: #FFEDB8;
+}
+#start_btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 15%;
+    font-family: very_simple;
+    margin-top: 12px;
+    margin-left: -20px;
+    margin-right: 20px;
+    background-color: #FCF8E8;
+}
+img{
+    margin-top: 2px;
+    margin-right: 20px;
+    height: 50px;
+    width: 50px;
+}
+#exampleModalLongTitle{
+    font-family: neat_chalk;
+}
+.modal-body ol li {
+    color:#679A7D;
+}
+.hidden{
+   display: none;
+}
+#controls{
+   justify-content: center;
+   display: flex;
+}
+#player_display{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   font-family: dust;
+   font-size: 50px;
+   font-weight: 590;
+}
+#p1_left, #p2_right{
+    display: flex;
+}
+#player1_display{
+    margin-right: 35px;
+    margin-left: 35px;
+    color: #799FCB;
+}
+#p1_time{
+    margin-right: 30px;
+    color: #EBA4A4 ;
+}
+#player2_display{
+    margin-right: 45px;
+    color: #87BDA4;
+}
+#p2_time{
+    margin-right: 100px;
+    color: #EBA4A4 ;
+}
+#hangman_display{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ canvas{
+     margin-right: 150px;
+ }
+ #word_dashes{
+    display: flex;
+    width: 800px;
+    height: 250px;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-left: 150px;
+ }
+ .dashed_line{
+    width: 100px;
+    height: 500px;
+    display: flex;
+    margin-top: 15%;
+    border: 3px solid #58CFEE;
+ }
+ .replace{
+     display: flex;
+     margin-top: 10%;
+     color: white;
+     font-size: 60px;
+     font-family: board;
+ }
+.row{
+   justify-content: center;
+}
+
+.btn_key{
+   height: 50px;
+   width: 50px;
+   padding: 10px;
+   margin: 20px;
+   border-radius: 20%;     
+   font-family: very_simple;  
+   font-weight: bolder;
+   font-size: 23px;
+   background-color: #EEECEE;    
+   color: #799FCB;
+}
+.btn_key:hover{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20%;     
+    font-family: very_simple;  
+    font-size: 23px;
+    background-color: #F7D7C4;    
+}
+.glow {
+    color: #FFEFB0;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #FFEFB0, 0 0 20px #FFEFB0, 0 0 30px #F1D97D, 0 0 40px #F1D97D, 0 0 50px #F1D97D, 0 0 60px #F1D97D, 0 0 70px #F1D97D;
+    }
+
+    to {
+        text-shadow: 0 0 20px #FFEFB0, 0 0 30px #F8E8AC, 0 0 40px #F8E8AC, 0 0 50px #F8E8AC, 0 0 60px #F8E8AC, 0 0 70px #F8E8AC, 0 0 80px #F8E8AC;
+    }
+}
+
+#curr_time{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: midnight;
+    color: #8CD1F6;
+}
+#bestTime1, #bestTime2, #bestTime3{
+    font-size: 50px;
+    color: white;
+    font-family: midnight;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#correct_word{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    font-family: very_simple;
+    color: #95FFF7;
+}
+#play_again{
+    font-family: very_simple;
+    font-size: 22px;
+    margin-left: 47%;
+    border-radius: 15%;
+    width: 120px;
+    color: palevioletred;
+    background-color: #FCF8E8;
+}
